@@ -1,0 +1,57 @@
+"""
+evszamok = (int(input('Kérek egy számot')))
+if evszamok < 1 :
+    print('csecsemő')
+elif evszamok < 6 :
+    print('kisgyerek')
+elif evszamok < 12:
+    print('gyerek')
+elif evszamok < 16 : 
+    print('serdülő')
+elif evszamok < 25 :
+    print('ifjú')
+elif evszamok < 65 :
+    print('felnőtt')
+elif evszamok <= 65: 
+    print('nyugdíjas')
+"""
+
+
+
+nev = input('adja meg a keresztnevét:')
+kor = int(input('Adja meg az ételkorát:'))
+if kor < 1:
+    print("A kora alapján", nev, "csecsemő!")
+elif kor < 6:
+    print("A kora alapján", nev, "kisgyerek!")
+elif kor < 12:
+    print("A kora alapján", nev, "gyerek!")
+elif kor < 16:
+    print("A kora alapján", nev, "serdülő!")
+elif kor < 25:
+    print("A kora alapján", nev, "ifjú!")
+elif kor < 65:
+    print("A kora alapján", nev, "felnőtt!")
+else:
+    print("A kora alapján", nev, "nyugdijas!")
+    
+    """
+magassag = int(input('kérem egy számot'))
+szelesseg = int(input('kérek egy számot'))
+if magassag > szelesseg :
+    print('állás')
+elif magassag < szelesseg :
+    print('fekvő')
+elif magassag == szelesseg :
+    print('négyzet')
+"""
+
+szelesseg = int(input("Adja meg a téglalap szélességét! "))
+magassag = int(input("Adja meg a téglalap magassagat! "))
+T = szelesseg * magassag
+if szelesseg > magassag:
+    print("Ez egy fekvő téglalap. Területe:",T)
+elif szelesseg < magassag:
+    print("Ez egy álló téglalap. Területe:",T)
+else:
+    print("A téglalap egy négyzet. Területe:",T)
